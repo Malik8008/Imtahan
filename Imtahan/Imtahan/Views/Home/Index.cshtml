@@ -1,0 +1,234 @@
+﻿@using Imtahan.ViewModels.HomeVM
+@using Imtahan.Models
+@model HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <section id="hero">
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="heroin">
+                    <div class="welcome">
+                        <h1>@Model.Hero.Title</h1>
+                    </div>
+                    <div class="subtitle">
+                        <p class="@Model.Hero.Subtitle"</p>
+                    </div>
+                    <div class="get d-flex">
+                        <div class="button">
+                            <a href=""><button>Get Started</button></a>
+                        </div>
+                        <div class="videoIcon ms-3">
+                            <a href="@Model.Hero.VideoUrl"><i class="fa-regular fa-circle-play"></i>Watch Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="service">
+                        <div class="button">
+                            <h4>Services</h4>
+                        </div>
+                        <div class="check">
+                            <h2>Welcome to <span>BizLand</span></h2>
+                        </div>
+                        <div class="info">
+                            <p class="text-muted">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+                        </div>
+                    </div>
+                </div>
+                @foreach (Service service in Model.Services)
+                {
+                    <div class="col-lg-4">
+                        <div class="card mt-3">
+                            <div class="icon">
+                                <i class="mt-3 @service.Icon"></i>
+                            </div>
+                            <div class="title">
+                                <h3>@service.Title</h3>
+                            </div>
+                            <div class="subtitle">
+                                <p class="text-muted">@service.Subtitle</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </section>
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="client">
+                        <div class="button">
+                            <h4>Team</h4>
+                        </div>
+                        <div class="check">
+                            <h2>Our Hardworking<span>Team</span></h2>
+                        </div>
+                        <div class="info">
+                            <p class="text-muted">
+                                Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci
+                                expedita at voluptas atque vitae autem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                @foreach (Client client in Model.Clients)
+                {
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="image">
+                                <img src="~/assets/IMG/client-image/@client.Image" alt="">
+                                <div class="socialmedia">
+                                    <ul class="d-flex justify-content-between w-100">
+                                        <li><a href=""><i class=" mx-2 fa-brands fa-twitter"></i></a></li>
+                                        <li><a href=""><i class=" ms-4 fa-brands fa-facebook"></i></a></li>
+                                        <li><a href=""><i class=" ms-4 fa-brands fa-instagram"></i></a></li>
+                                        <li><a href=""><i class=" ms-4 fa-brands fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="name mt-2">
+                                <h5>@client.Name</h5>
+                            </div>
+                            <div class="position">
+                                <p class="text-muted">@client.Position</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact">
+                        <div class="button">
+                            <h4>contact</h4>
+                        </div>
+                        <div class="check">
+                            <h2>CONTACT</h2>
+                        </div>
+                        <div class="info">
+                            <p class="text-muted">
+                                Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita
+                                at voluptas atque vitae autem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <div class="adress">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="title">
+                            <h4>Our Address</h4>
+                        </div>
+                        <div class="info">
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <div class="email">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="title">
+                            <h4>Email Us</h4>
+                        </div>
+                        <div class="info">
+                            <p>contact@example.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <div class="call">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="title">
+                            <h4>Call Us</h4>
+                        </div>
+                        <div class="info">
+                            <p>+1 5589 55488 55</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <div class="map">
+                        <map name=""><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12155.9933312857!2d49.807696596799204!3d40.386729559395576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1656577622428!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></map>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="cards mt-4 ">
+                        <div class="mt-4 inputs d-flex justify-content-around">
+                            <div class="name mt-4">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                            <div class="emailcontact  mt-4">
+                                <input type="email" placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="subject mt-5">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="textarea mt-5">
+                            <textarea name="" id="" style="width:95%" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div class="button mt-5">
+                            <a href=""><button>Send Message</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="joins">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="join mt-5">
+                        <div class="title">
+                            <h2>CONTACT</h2>
+                        </div>
+                        <div class="info">
+                            <p class="text-muted">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        </div>
+                        <div class="subscribeme d-flex">
+                            <div class="input">
+                                <input type="text">
+                            </div>
+                            <div class="subscribe">
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+

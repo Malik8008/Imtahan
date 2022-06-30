@@ -1,0 +1,34 @@
+﻿@using Imtahan.Models
+
+@model Client
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Position</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th>
+            @Model.Name
+        </th>
+        <th>
+            @Model.Position
+        </th>
+    </tr>
+</tbody>
+
+<form method="post">
+    <div class="form-group">
+        <input type="submit" value="Delete" class="btn btn-primary" />
+    </div>
+</form>
+
+
+

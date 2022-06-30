@@ -1,0 +1,601 @@
+* {
+  padding: 0;
+  margin: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  #headerbottom .navbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #topheader .left ul li {
+    margin-top: -40px;
+  }
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#topheader {
+  background-color: #106eea;
+  padding-top: 5px;
+}
+
+#topheader .right .email .emailIcon i {
+  font-size: 20px;
+  color: white;
+}
+
+#topheader .right .email .emailInfo a {
+  color: white;
+}
+
+#topheader .right .phone .phoneIcon i {
+  font-size: 20px;
+  color: white;
+}
+
+#topheader .right .phone .phoneInfo p {
+  color: white;
+}
+
+#topheader .left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#topheader .left ul li {
+  list-style: none;
+}
+
+#topheader .left ul li a {
+  text-decoration: none;
+}
+
+#topheader .left ul li a i {
+  font-size: 20px;
+  color: grey;
+}
+
+#topheader .left ul li a i:hover {
+  color: white;
+}
+
+#headerbottom {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+#headerbottom .logo span {
+  color: #106eea;
+}
+
+#headerbottom .navbar ul li {
+  margin-left: 15px;
+  list-style: none;
+}
+
+#headerbottom .navbar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+#headerbottom .navbar ul li a:hover {
+  color: blue;
+}
+
+#hero {
+  position: relative;
+  background-image: url(../IMG/hero-image/hero-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 700px;
+  opacity: 0.4;
+}
+
+.heroin {
+  position: absolute;
+  top: 40%;
+}
+
+.heroin .welcome h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.heroin .welcome h1 span {
+  color: #106eea;
+}
+
+.heroin .subtitle p {
+  font-size: 20px;
+}
+
+.heroin .get .button a button {
+  background-color: #106eea;
+  color: white;
+  border: none;
+  width: 140px;
+  padding: 7px;
+}
+
+.heroin .get .videoIcon a {
+  text-decoration: none;
+  font-size: 25px;
+  color: blue;
+}
+
+.heroin .get .videoIcon a i {
+  font-size: 30px;
+}
+
+#services {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#services .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#services .service .button h4 {
+  width: 120px;
+  background-color: #9d9dc5;
+  border-radius: 50px;
+  padding: 4px;
+  color: white;
+}
+
+#services .service .check h2 {
+  font-size: 40px;
+  color: black;
+}
+
+#services .service .check h2 span {
+  color: #106eea;
+}
+
+#services .service .info {
+  width: 650px;
+}
+
+#services .service .info p {
+  font-size: 20px;
+}
+
+#services .card {
+  border: 1px solid #106eea;
+  height: 350px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#services .card .icon {
+  width: 60px;
+  height: 60px;
+  background-color: #9d9dc5;
+}
+
+#services .card .icon i {
+  font-size: 25px;
+  color: #106eea;
+}
+
+#services .card:hover {
+  box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  border: none;
+}
+
+#services .card:hover .icon {
+  border: 1px solid #106eea;
+}
+
+#services .card:hover .title h3 {
+  color: #106eea;
+}
+
+#clients {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#clients .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#clients .client .button h4 {
+  width: 90px;
+  background-color: #9d9dc5;
+  border-radius: 50px;
+  padding: 4px;
+  color: white;
+}
+
+#clients .client .check h2 {
+  font-size: 40px;
+  color: black;
+}
+
+#clients .client .check h2 span {
+  color: #106eea;
+}
+
+#clients .client .info {
+  width: 650px;
+}
+
+#clients .client .info p {
+  font-size: 20px;
+}
+
+#clients .card .image {
+  position: relative;
+}
+
+#clients .card .image img {
+  width: 100%;
+}
+
+#clients .card .image .socialmedia {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+}
+
+#clients .card .image .socialmedia ul li {
+  list-style: none;
+}
+
+#clients .card .image .socialmedia ul li a {
+  text-decoration: none;
+}
+
+#clients .card .image .socialmedia ul li a i {
+  font-size: 30px;
+}
+
+#clients .card .name h5 {
+  font-weight: bold;
+}
+
+#clients .card:hover .socialmedia {
+  display: block;
+}
+
+#contacts {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#contacts .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#contacts .contact .button h4 {
+  width: 120px;
+  background-color: #9d9dc5;
+  border-radius: 50px;
+  padding: 5px;
+  color: white;
+}
+
+#contacts .contact .check h2 {
+  font-size: 40px;
+  color: blue;
+}
+
+#contacts .contact .info {
+  width: 650px;
+}
+
+#contacts .contact .info p {
+  font-size: 20px;
+}
+
+#contacts .adress {
+  box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 170px;
+}
+
+#contacts .adress .icon {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 100px;
+  border-style: dotted;
+  border-color: blue;
+}
+
+#contacts .adress .icon i {
+  font-size: 30px;
+  color: blue;
+}
+
+#contacts .email {
+  box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 170px;
+}
+
+#contacts .email .icon {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 100px;
+  border-style: dotted;
+  border-color: blue;
+}
+
+#contacts .email .icon i {
+  font-size: 30px;
+  color: blue;
+}
+
+#contacts .call {
+  box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 170px;
+}
+
+#contacts .call .icon {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 100px;
+  border-style: dotted;
+  border-color: blue;
+}
+
+#contacts .call .icon i {
+  font-size: 30px;
+  color: blue;
+}
+
+#contacts .cards {
+  box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  padding-bottom: 15px;
+}
+
+#contacts .cards .inputs .name input {
+  display: inline-block;
+  width: 300px;
+  padding: 8px;
+}
+
+#contacts .cards .inputs .emailcontact input {
+  display: inline-block;
+  width: 300px;
+  padding: 8px;
+}
+
+#contacts .cards .subject {
+  text-align: center;
+}
+
+#contacts .cards .subject input {
+  display: inline-block;
+  width: 95%;
+  padding: 8px;
+}
+
+#contacts .cards .textarea {
+  text-align: center;
+}
+
+#contacts .cards .button {
+  text-align: center;
+}
+
+#contacts .cards .button button {
+  background-color: #106eea;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+#joins {
+  padding-bottom: 40px;
+  background-color: #abdfdf;
+}
+
+#joins .join {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#joins .join .subscribeme .subscribe button {
+  border: none;
+  background-color: #106eea;
+  color: white;
+  padding: 2px;
+}
+
+#footertop {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#footertop ul {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#footertop ul li {
+  list-style: none;
+}
+
+#footerend .design p a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+﻿@using Imtahan.Models
+
+@model Client
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="name">
+    <label>Name:</label><br />
+    @Model.Name
+</div>
+<div class="name mt-3">
+    <label>Position:</label><br />
+    @Model.Position
+</div>
+<div class="name">
+    <img src="~/assets/IMG/client-image/@Model.Image"/>
+</div>
+
